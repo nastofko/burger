@@ -1,0 +1,44 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #dddee9;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: rgb(240, 240, 34);
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .pic1{
+      background-color: yellow;
+  }
+  .pic2{
+      float: right;
+  }
+
+  .col-sm-3 {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
