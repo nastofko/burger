@@ -3,7 +3,7 @@ const router = express.Router();
 const burger = require("../models/burger.js");
 
 router.get('/', function (req, res) {
-	res.redirect('/burgers');
+    res.redirect('/burgers');
 });
 
 router.get('/burgers', function (req, res) {
@@ -24,7 +24,6 @@ router.post('/burgers/create', function (req, res) {
             req.body.burger_name, req.body.devoured
         ],
         function (result) {
-            // MAKE SURE IT'S WORKING WITH THE REDIRECT
             res.json({ id: result.insertID });
         });
 });
