@@ -61,4 +61,3 @@ router.delete('burgers/delete/:id', function (req, res) {
 
 module.exports = router;
 
-//end
