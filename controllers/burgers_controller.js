@@ -3,7 +3,7 @@ const router = express.Router();
 const burger = require("../models/burger.js");
 
 router.get('/', function (req, res) {
-    res.redirect('/burgers');
+    res.render("index")
 });
 
 router.get('/burgers', function (req, res) {
