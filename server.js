@@ -2,8 +2,6 @@ var express = require("express");
 
 require('dotenv')
 
-var PORT = process.env.PORT || 5000;
-
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -25,6 +23,12 @@ var routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
+
+
+
+
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
